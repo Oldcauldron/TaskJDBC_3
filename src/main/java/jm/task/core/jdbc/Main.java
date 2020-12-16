@@ -11,10 +11,10 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        UserDaoJDBCImpl dao = new UserDaoJDBCImpl();
+//        UserDaoJDBCImpl dao = new UserDaoJDBCImpl();
         UserService service = new UserServiceImpl();
 
-        dao.createUsersTable();
+        service.createUsersTable();
 
         List<User> listUsers = new ArrayList<>();
         listUsers.add(new User("Jimi", "Hendrix", (byte)27));
